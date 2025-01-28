@@ -3,40 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="dist/output.css">
+  <title>Your Name | Developer</title>
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="max-w-2xl mx-auto px-4 py-8 prose prose-slate dark:prose-invert">
-  <header class="mb-8">
-    <h1>Welcome to My Personal Site</h1>
-    <nav>
-      <ul class="flex gap-4 list-none p-0">
-        <li><a href="#about" class="no-underline hover:underline">About Me</a></li>
-        <li><a href="#resume" class="no-underline hover:underline">Resume</a></li>
-        <li><a href="#projects" class="no-underline hover:underline">Projects</a></li>
-      </ul>
-    </nav>
+<body class="bg-black text-white font-mono">
+  <!-- Header -->
+  <header class="container mx-auto p-8 text-center">
+    <h1 class="text-4xl font-bold text-green-400">$> Your Name</h1>
+    <p class="mt-2 text-gray-400">// Developer | Designer | Problem Solver</p>
   </header>
 
-  <main class="space-y-8">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm a developer passionate about building cool things.</p>
+  <!-- Main Content -->
+  <main class="container mx-auto p-8">
+    <!-- About Section -->
+    <section class="section">
+      <h2 class="section-heading">$> About Me</h2>
+      <div class="prose prose-invert mt-4">
+        <p>
+          I'm a passionate developer with a love for clean code and elegant solutions. 
+          I specialize in building web applications, automating workflows, and solving complex problems.
+        </p>
+        <p>
+          When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+          or enjoying a good cup of coffee.
+        </p>
+      </div>
     </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>Here you can find my professional experience and skills.</p>
+    <!-- Skills Section -->
+    <section class="section">
+      <h2 class="section-heading">$> Skills</h2>
+      <div class="mt-4">
+        <ul class="list-disc list-inside text-gray-400">
+          <li>JavaScript (React, Node.js)</li>
+          <li>Python</li>
+          <li>Tailwind CSS</li>
+          <li>SQL & NoSQL Databases</li>
+          <li>DevOps & CI/CD</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Check out some of my personal projects below.</p>
+    <!-- Projects Section -->
+    <section class="section">
+      <h2 class="section-heading">$> Projects</h2>
+      <div class="mt-4 space-y-4">
+        <div class="project-border">
+          <h3 class="project-title">Project One</h3>
+          <p class="text-gray-400">A web app for managing tasks and productivity.</p>
+          <a href="#" class="text-green-400 hover:underline">View Project →</a>
+        </div>
+        <div class="project-border">
+          <h3 class="project-title">Project Two</h3>
+          <p class="text-gray-400">An open-source library for data visualization.</p>
+          <a href="#" class="text-green-400 hover:underline">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <h2 class="section-heading">$> Contact</h2>
+      <div class="mt-4">
+        <p class="text-gray-400">Let's connect! Reach out to me via email or social media.</p>
+        <div class="mt-2 space-x-4">
+          <a href="mailto:your.email@example.com" class="text-green-400 hover:underline">Email</a>
+          <a href="https://github.com/yourusername" class="text-green-400 hover:underline">GitHub</a>
+          <a href="https://linkedin.com/in/yourusername" class="text-green-400 hover:underline">LinkedIn</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="mt-8 text-sm text-gray-500">
-    <p>&copy; 2024 My Personal Site</p>
+  <!-- Footer -->
+  <footer class="container mx-auto p-8 text-center text-gray-400">
+    <p>© 2023 Your Name. All rights reserved.</p>
   </footer>
 </body>
 </html>
