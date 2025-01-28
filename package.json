@@ -1,0 +1,25 @@
+{
+  "name": "randomlevelup-25",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randomLevelup/randomLevelup-25.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randomLevelup/randomLevelup-25/issues"
+  },
+  "homepage": "https://github.com/randomLevelup/randomLevelup-25#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}

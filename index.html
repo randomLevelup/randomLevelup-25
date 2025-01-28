@@ -4,37 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
-  <header>
+<body class="max-w-2xl mx-auto px-4 py-8 prose prose-slate dark:prose-invert">
+  <header class="mb-8">
     <h1>Welcome to My Personal Site</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
+      <ul class="flex gap-4 list-none p-0">
+        <li><a href="#about" class="no-underline hover:underline">About Me</a></li>
+        <li><a href="#resume" class="no-underline hover:underline">Resume</a></li>
+        <li><a href="#projects" class="no-underline hover:underline">Projects</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a developer passionate about building cool things.</p>
-  </section>
+  <main class="space-y-8">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a developer passionate about building cool things.</p>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Here you can find my professional experience and skills.</p>
-  </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Here you can find my professional experience and skills.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Check out some of my personal projects below.</p>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Check out some of my personal projects below.</p>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2023 My Personal Site</p>
+  <footer class="mt-8 text-sm text-gray-500">
+    <p>&copy; 2024 My Personal Site</p>
   </footer>
 </body>
 </html>
