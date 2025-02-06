@@ -16,8 +16,5 @@ yarn-error.log*
 .env
 .env.local
 
-# Icon source files
-icons/
-
 # Nothing to see here
 not_repo_token
