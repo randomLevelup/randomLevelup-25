@@ -36,6 +36,7 @@ function getDistanceToBorder(point, rect) {
 // Gallery auto-scroll functionality
 document.addEventListener('DOMContentLoaded', () => {
   const galleries = document.querySelectorAll('.gallery-container');
+  const SCROLL_SPEED = 60; // pixels per second
   
   galleries.forEach(gallery => {
     const images = gallery.querySelectorAll('.gallery-image');
@@ -47,15 +48,23 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let position = 0;
     let cloneScheduled = false;
+    let lastTimestamp = 0;
     
-    function animateGallery() {
+    function animateGallery(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      
+      // Calculate time elapsed since last frame in seconds
+      const deltaTime = (timestamp - lastTimestamp) / 1000;
+      lastTimestamp = timestamp;
+      
       const images = gallery.querySelectorAll('.gallery-image');
       let totalWidth = 0;
       images.forEach(img => {
           totalWidth += img.width;
       });
 
-      position -= 1;
+      // Move based on elapsed time and pixels per second
+      position -= SCROLL_SPEED * deltaTime;
       
       if (-position > totalWidth / 2 && !cloneScheduled) {
         cloneScheduled = true;
