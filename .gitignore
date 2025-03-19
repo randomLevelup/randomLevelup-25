@@ -6,6 +6,7 @@ dist/
 
 # IDE
 .vscode/
+.gitignore
 
 # Debug logs
 npm-debug.log*
