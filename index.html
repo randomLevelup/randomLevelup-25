@@ -82,7 +82,7 @@
             Hi! I'm Jupiter...
           </p>
           <p>
-            I am a student and a technical developer with a passion for making music and movies. I specialize in problem-solving, spatial and geometric algorithms, image processing, and all sorts of creative tools. I'm currently studying computer science at Tufts University in Medford, MA.
+            I am a student and a technical developer with a passion for making music and movies. I specialize in machine learning, spatial and geometric algorithms, image processing, digital signal processing, and all sorts of creative tools. I'm currently studying computer science at Tufts University in Medford, MA.
           </p>
           <p>
             When I'm not poring over problem sets, you can find me implementing obscure algorithms, writing songs, working on short films, bouldering, or fanatically patronizing Dunkin Donuts.
@@ -90,17 +90,38 @@
         </div>
       </section>
 
-      <!-- Experience Section -->
+      <!-- Skills Section -->
       <section id="skills" class="section scroll-mt-8">
         <h2 class="section-heading">⚡ Skills</h2>
-        <div class="mt-4">
-          <ul class="skills-list">
-            <li>Compiled languages (C/C++, Go)</li>
-            <li>Python (and tensorflow, keras etc.)</li>
-            <li>Game Development (Unity)</li>
-            <li>Static Websites (like this one)</li>
-            <li>Media Creation (Adobe Suite, Blender 3D, Ableton Live)</li>
-          </ul>
+        <div class="mt-4 flex flex-col md:flex-row">
+          <!-- First Column -->
+          <div class="flex-1">
+            <ul class="skills-list">
+              <li>C/C++</li>
+              <li>Python 3</li>
+              <li>Pytorch</li>
+              <li>Tensorflow</li>
+              <li>Pandas, Keras, Sklearn</li>
+              <li>Game Development (Unity)</li>
+              <li>Static Websites (like this one)</li>
+              <li>Functional languages (Haskell, Scheme)</li>
+              <li>Windows 10/11</li>
+            </ul>
+          </div>
+          <!-- Second Column -->
+          <div class="flex-1">
+            <ul class="skills-list">
+              <li>Linux (Ubuntu, Arch, Rocky etc.)</li>
+              <li>Git</li>
+              <li>HTML/CSS</li>
+              <li>Tailwind CSS</li>
+              <li>Blender 3D</li>
+              <li>Adobe After Effects</li>
+              <li>Adobe Premiere Pro</li>
+              <li>Ableton Live</li>
+              <li>Logic Pro</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -121,10 +142,10 @@
             </div>
             <div class="project-gallery">
               <div class="gallery-container" data-gallery="parkergpt">
-                <img src="images/pgpt-3.jpg" alt="ParkerGPT screenshot 3" class="gallery-image">
-                <img src="images/pgpt-2.jpg" alt="ParkerGPT screenshot 2" class="gallery-image">
-                <img src="images/pgpt-4.jpg" alt="ParkerGPT screenshot 4" class="gallery-image">
-                <img src="images/pgpt-1.jpg" alt="ParkerGPT screenshot 1" class="gallery-image">
+                <img src="images/pgpt-3.jpg" alt="ParkerGPT JPG 3" class="gallery-image">
+                <img src="images/pgpt-2.jpg" alt="ParkerGPT JPG 2" class="gallery-image">
+                <img src="images/pgpt-4.jpg" alt="ParkerGPT JPG 4" class="gallery-image">
+                <img src="images/pgpt-1.jpg" alt="ParkerGPT JPG 1" class="gallery-image">
               </div>
             </div>
           </div>
@@ -141,9 +162,9 @@
             </div>
             <div class="project-gallery">
               <div class="gallery-container" data-gallery="project-two">
-                <img src="images/octo-1.png" alt="Project Two screenshot 1" class="gallery-image">
-                <img src="images/octo-2.png" alt="Project Two screenshot 2" class="gallery-image">
-                <img src="images/octo-3.png" alt="Project Two screenshot 3" class="gallery-image">
+                <img src="images/octo-1.png" alt="Octo PNG 1" class="gallery-image">
+                <img src="images/octo-2.png" alt="Octo PNG 2" class="gallery-image">
+                <img src="images/octo-3.png" alt="Octo PNG 3" class="gallery-image">
               </div>
             </div>
           </div>
@@ -153,8 +174,79 @@
       <!-- All Projects Section -->
       <section id="all-projects" class="section scroll-mt-8">
         <h2 class="section-heading">⚡ All Projects</h2>
-        <div class="mt-4">
-          <!-- Todo: add media content -->
+        <div class="projects-container">
+          <div class="projects-grid-container">
+
+            <!-- Reunion of Strangers -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="RoS JPG" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Reunion of Strangers</h3>
+                <p class="project-card-description">A short film about relationships, friendships, old regrets and new beginnings. Shot, edited and scored by me.</p>
+                <a href="https://www.youtube.com/watch?v=vBNeku_qEMA" class="project-card-link" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a>
+              </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="Project 2" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Project 2</h3>
+                <p class="project-card-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <a href="#" class="project-card-link">Learn more →</a>
+              </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="Project 3" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Project 3</h3>
+                <p class="project-card-description">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta.</p>
+                <a href="#" class="project-card-link">Explore →</a>
+              </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="Project 4" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Project 4</h3>
+                <p class="project-card-description">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis.</p>
+                <a href="#" class="project-card-link">View project →</a>
+              </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="Project 5" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Project 5</h3>
+                <p class="project-card-description">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+                <a href="#" class="project-card-link">See details →</a>
+              </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="Project 6" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Project 6</h3>
+                <p class="project-card-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta.</p>
+                <a href="#" class="project-card-link">Check it out →</a>
+              </div>
+            </div>
+            
+            <!-- Project 7 -->
+            <div class="project-card-grid">
+              <img src="images/ros-1.jpg" alt="Project 7" class="project-card-image">
+              <div class="project-card-content">
+                <h3 class="project-card-title">Project 7</h3>
+                <p class="project-card-description">Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <a href="#" class="project-card-link">Read more →</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

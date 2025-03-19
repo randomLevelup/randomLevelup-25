@@ -55,7 +55,7 @@ module.exports = {
 
                 // Sidebar Components
                 '.sticky-sidebar': {
-                    '@apply hidden lg:block w-[25%] xl2:w-[35%] fixed top-0 left-0 h-screen bg-surface backdrop-blur-sm z-50 pt-12': {},
+                    '@apply hidden lg:block w-[25%] xl2:w-[30%] fixed top-0 left-0 h-screen bg-surface backdrop-blur-sm z-50 pt-12': {},
                 },
                 '.sidebar-content': {
                     '@apply p-8 pl-12 flex flex-col justify-between h-full': {},
@@ -94,7 +94,7 @@ module.exports = {
 
                 // Main Content Components
                 '.main-container': {
-                    '@apply w-full lg:w-[75%] xl2:w-[65%] px-4 lg:px-12 py-8 lg:ml-[25%] xl2:ml-[35%]': {},
+                    '@apply w-full lg:w-[75%] xl2:w-[70%] px-4 lg:px-12 py-8 lg:ml-[25%] xl2:ml-[30%]': {},
                 },
                 '.section': {
                     '@apply mb-16 relative px-6 py-8 bg-surface-light/50 backdrop-blur-sm rounded-lg border border-primary-dark/20 scroll-mt-8': {},
@@ -130,6 +130,34 @@ module.exports = {
                 },
                 '.gallery-image': {
                     '@apply h-full object-cover': {},
+                },
+
+                // Horizontal Projects Components
+                '.projects-container': {
+                    '@apply w-full mb-8': {},
+                },
+                
+                // Grid Projects Components
+                '.projects-grid-container': {
+                    '@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6': {},
+                },
+                '.project-card-grid': {
+                    '@apply bg-surface/80 rounded-lg border border-primary-dark/30 hover:border-primary-dark transition-colors duration-300 overflow-hidden flex flex-col': {},
+                },
+                '.project-card-image': {
+                    '@apply w-full object-cover aspect-[16/9]': {},
+                },
+                '.project-card-content': {
+                    '@apply p-4 flex flex-col flex-grow': {},
+                },
+                '.project-card-title': {
+                    '@apply text-xl font-bold text-primary tracking-wider mb-2': {},
+                },
+                '.project-card-description': {
+                    '@apply mt-2 pt-1 text-gray-400 text-sm line-clamp-6': {},
+                },
+                '.project-card-link': {
+                    '@apply mt-auto pt-2 text-orange-400 hover:underline': {},
                 },
 
                 // Social Icons Components
