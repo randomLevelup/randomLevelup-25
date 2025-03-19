@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-size: 90%;
+  }
+}
+
 .cursor-glow {
   display: none;
 }

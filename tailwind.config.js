@@ -110,14 +110,26 @@ module.exports = {
                 },
 
                 // Project Components
-                '.project-border': {
-                    '@apply relative p-6 bg-surface/80 rounded-r-lg border-l-[3px] border-l-primary hover:border-l-primary-dark transition-colors duration-300': {},
+                '.project-card': {
+                    '@apply relative p-6 bg-surface/80 rounded-r-lg border-l-[3px] border-l-primary hover:border-l-primary-dark transition-colors duration-300 flex flex-col md:flex-row gap-6': {},
+                },
+                '.project-content': {
+                    '@apply flex flex-col md:w-1/3': {},
                 },
                 '.project-title': {
                     '@apply text-2xl font-bold text-primary tracking-wider': {},
                 },
                 '.project-link': {
-                    '@apply text-orange-400 hover:underline': {},
+                    '@apply mt-2 text-orange-400 hover:underline': {},
+                },
+                '.project-gallery': {
+                    '@apply md:w-2/3 h-[150px] relative overflow-hidden rounded-lg': {},
+                },
+                '.gallery-container': {
+                    '@apply flex absolute top-0 left-0 h-full transition-transform duration-1000 ease-linear': {},
+                },
+                '.gallery-image': {
+                    '@apply h-full object-cover': {},
                 },
 
                 // Social Icons Components
