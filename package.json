@@ -4,6 +4,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "update-submodules": "git submodule update --remote",
+    "deploy": "npm run update-submodules && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
