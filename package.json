@@ -4,9 +4,9 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "start": "node server.js",
     "update-submodules": "git submodule update --remote",
-    "deploy": "npm run update-submodules && npm run build",
+    "decompress-unity": "node decompress-gz.js",
+    "deploy": "npm run update-submodules && npm run build && npm run decompress-unity",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -45,7 +45,6 @@
     "dlv": "^1.1.3",
     "eastasianwidth": "^0.2.0",
     "emoji-regex": "^9.2.2",
-    "express": "^5.2.1",
     "fast-glob": "^3.3.3",
     "fastq": "^1.18.0",
     "fill-range": "^7.1.1",
