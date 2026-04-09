@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify && npm run build --prefix mp3paper",
     "update-submodules": "git submodule update --remote",
     "decompress-unity": "node decompress-gz.js",
     "deploy": "npm run update-submodules && npm run build && npm run decompress-unity",

@@ -1,3 +1,6 @@
 [submodule "circlegen"]
 	path = circlegen
 	url = https://github.com/randomLevelup/circlegen.git
+[submodule "mp3paper"]
+	path = mp3paper
+	url = https://github.com/randomLevelup/mp3paper.git
