@@ -50,12 +50,12 @@ module.exports = {
 
                 // Typography Components
                 '.title-text': {
-                    '@apply text-4xl font-bold text-primary pr-4 pl-[2.5rem] indent-[-2.5rem]': {},
+                    '@apply text-4xl font-bold text-primary pl-6': {},
                 },
 
                 // Sidebar Components
                 '.sticky-sidebar': {
-                    '@apply hidden lg:block w-[25%] xl2:w-[30%] fixed top-0 left-0 h-screen bg-surface backdrop-blur-sm z-50 pt-12': {},
+                    '@apply hidden lg:block w-[25%] xl2:w-[30%] fixed top-0 left-0 h-screen bg-surface z-50 pt-12': {},
                 },
                 '.sidebar-content': {
                     '@apply p-8 pl-12 flex flex-col justify-between h-full': {},
@@ -64,23 +64,21 @@ module.exports = {
                     '@apply mt-8 space-y-8 mb-16': {},
                 },
                 '.nav-link': {
-                    '@apply block text-xl text-primary hover:text-primary-dark transition-colors': {},
+                    '@apply block text-xl text-primary hover:text-primary-dark': {},
                     position: 'relative',
-                    paddingLeft: '2.5rem',
+                    paddingLeft: '1.5rem',
                     transform: 'translateX(0)',
-                    transition: 'transform 0.2s ease-in-out',
                     '&::before': {
-                        content: '""',
+                        content: '"-"',
                         position: 'absolute',
                         left: '0',
-                        display: 'inline-block',
-                        width: '2rem',
+                        opacity: '0',
                     },
                     '&:hover': {
-                        transform: 'translateX(0.5rem)',
+                        transform: 'translateX(1.5rem)',
                     },
                     '&:hover::before': {
-                        content: '"⚡"',
+                        opacity: '1',
                     },
                 },
 
@@ -91,13 +89,16 @@ module.exports = {
                 '.subtitle-text': {
                     '@apply mt-2 pt-1 text-gray-400': {},
                 },
+                '.intro-subtitle-text': {
+                    '@apply mt-2 pt-1 text-gray-400 pl-6': {},
+                },
 
                 // Main Content Components
                 '.main-container': {
                     '@apply w-full lg:w-[75%] xl2:w-[70%] px-4 lg:px-12 py-8 lg:ml-[25%] xl2:ml-[30%]': {},
                 },
                 '.section': {
-                    '@apply mb-16 relative px-6 py-8 bg-surface-light/50 backdrop-blur-sm rounded-lg border border-primary-dark/20 scroll-mt-8': {},
+                    '@apply mb-16 relative px-6 py-8 bg-surface-light/50 rounded-lg border border-primary-dark/20 hover:border-primary scroll-mt-8': {},
                 },
                 '.section-heading': {
                     '@apply text-2xl font-bold text-primary mb-6 inline-block relative border-b-4 border-dotted border-primary-dark/50 pb-2': {},
@@ -126,7 +127,8 @@ module.exports = {
                     '@apply md:w-2/3 h-[150px] relative overflow-hidden rounded-lg': {},
                 },
                 '.gallery-container': {
-                    '@apply flex absolute top-0 left-0 h-full transition-transform duration-1000 ease-linear': {},
+                    '@apply flex absolute top-0 left-0 h-full': {},
+                    willChange: 'transform',
                 },
                 '.gallery-image': {
                     '@apply h-full object-cover': {},
